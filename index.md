@@ -27,10 +27,6 @@
 ### Business Intelligence Business Analyst Projects
 
 - [Project 1 : Covid-19 Visualisations](http://example.com/)
-- [Project 2 Title](http://example.com/)
-- [Project 3 Title](http://example.com/)
-- [Project 4 Title](http://example.com/)
-- [Project 5 Title](http://example.com/)
 
 ---
 ### Data Warehousing Design
