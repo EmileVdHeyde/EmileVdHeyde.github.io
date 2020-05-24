@@ -33,7 +33,7 @@
 - [Project 5 Title](http://example.com/)
 
 ---
-### Data wharehousing 
+### Data Warehousing Design
 
 - [Project 1 Title](http://example.com/)
 
