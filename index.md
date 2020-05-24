@@ -4,15 +4,15 @@
 
 ### Python Coding Projects
 
-[Project 1 Title](/sample_page)
+[Project 1 Web Scraping Covid data from HTML to Database](/sample_page)
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
 
 ---
-[Project 2 Title](/pdf/sample_presentation.pdf)
+[Project 2 A little game of hangman](/pdf/sample_presentation.pdf)
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
 
 ---
-[Project 3 Title](http://example.com/)
+[Project 3 Web Scraping from JSON files to Database](http://example.com/)
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
 
 ---
