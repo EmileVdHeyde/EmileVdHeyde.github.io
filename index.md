@@ -19,19 +19,21 @@
 
 ### Data Science Projects
 
-- [Project 1 : Classification solution to Adviser Risk](http://example.com/)
-- [Project 2 : Text Analysis for Bad words and moderation of posted comments](http://example.com/)
+[Project 1 : Classification solution to Adviser Risk](http://example.com/)
+
+---
+[Project 2 : Text Analysis for Bad words and moderation of posted comments](http://example.com/)
 
 ---
 
 ### Business Intelligence Business Analyst Projects
 
-- [Project 1 : Covid-19 Visualisations](http://example.com/)
+[Project 1 : Covid-19 Visualisations](http://example.com/)
 
 ---
-### Data Warehousing Design
+### Data Warehousing Design Projects
 
-- [Project 1 Title](http://example.com/)
+[Project 1 Title](http://example.com/)
 
 
 
