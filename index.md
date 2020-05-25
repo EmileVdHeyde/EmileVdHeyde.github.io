@@ -12,7 +12,7 @@
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
 
 ---
-[Web Scraping from JSON files to Database](http://example.com/)
+[Web Scraping from JSON files to Database](/Py_JsonPull)
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
 
 ---
