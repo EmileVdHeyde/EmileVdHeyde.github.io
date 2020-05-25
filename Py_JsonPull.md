@@ -1,11 +1,11 @@
 ## Web Scraping Data from a Json page to Datafame 
 
+[Back to Project List](http://emilevdheyde.github.io/)
+
 **Project description:** 
 
 This project uses an Free API and extract a selection of data points relating to the countries of the world.
 This is a excercise in getting the data into a dataframe sructure , wrangeling some data issues and over coming the sometimes multiple responses per targetd column
-
-[Click here to View .py or .ipynb files relating to this project] (https://github.com/EmileVdHeyde/My-Python-Projects/tree/master/1.Covid%20Data%20Web%20Scraping)
 
 [Click here to View .py or .ipynb files relating to this project](http://github.com/EmileVdHeyde/My-Python-Projects/tree/master/1.Covid%20Data%20Web%20Scraping)
 
@@ -51,4 +51,5 @@ if (isAwesome){
 
 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+
+[Back to Project List](http://emilevdheyde.github.io/)
