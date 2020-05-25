@@ -5,6 +5,9 @@
 This project uses an Free API and extract a selection of data points relating to the countries of the world.
 This is a excercise in getting the data into a dataframe sructure , wrangeling some data issues and over coming the sometimes multiple responses per targetd column
 
+Actual .py or .ipynb files: 
+https://github.com/EmileVdHeyde/My-Python-Projects/tree/master/1.Covid%20Data%20Web%20Scraping
+
 ### 1. Suggest hypotheses about the causes of observed phenomena
 
 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
