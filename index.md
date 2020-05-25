@@ -5,15 +5,14 @@
 ### Python Coding Projects
 
 [Web Scraping Covid data from HTML to Database](/sample_page)
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+
 
 ---
 [A little game of hangman](/pdf/sample_presentation.pdf)
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+
 
 ---
 [Web Scraping from JSON files to Database](/Py_JsonPull)
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
 
 ---
 
