@@ -8,7 +8,7 @@
 
 
 ---
-[A little game of hangman](/pdf/sample_presentation.pdf)
+[A little game of hangman](/Py_HangmanGame.md)
 
 
 ---
