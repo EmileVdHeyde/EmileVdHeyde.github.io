@@ -28,9 +28,9 @@ Run through the HTML per day, to extract the values and store in database
 
 Respond if user is correct or and respond if incorrect , give the answr once the number of turns have expired
 
-![image](/Hangman Game/view1.PNG)
+![image](/2. Hangman Game/view1.PNG)
 
-![image](/Hangman Game/view1.PNG)
+![image](/2. Hangman Game/view2.PNG)
 
 Packages used :
 Beautiful Soup | Pandas | Requests | SQL Lite | Seaborn | MatplotLib
