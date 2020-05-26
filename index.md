@@ -25,7 +25,7 @@
 
 ---
 
-### Business Intelligence Business Analyst Projects
+### Miscellaneous Projects
 
 [Covid-19 Visualisations](http://example.com/)
 
