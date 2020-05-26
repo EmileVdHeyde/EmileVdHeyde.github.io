@@ -134,4 +134,7 @@ def build_country_database(list_country):
 
 Allow entry of a country name into function to return information
 
+Packages Used: 
+URLIB | JSON | PANDAS 
+
 [Back to Project List](http://emilevdheyde.github.io/)
