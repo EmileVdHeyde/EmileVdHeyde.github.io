@@ -18,7 +18,7 @@
 
 ### Data Science Projects
 
-[Classification solution to Adviser Risk](/DS_Classification_EarlyCancelations.md)
+[Classification of Early policy Cancelation based on Adviser Features](/DS_Classification_EarlyCancelations.md)
 
 ---
 [Text Analysis for Bad words and moderation of posted comments](http://example.com/)
