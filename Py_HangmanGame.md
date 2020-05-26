@@ -33,7 +33,7 @@ Respond if user is correct or and respond if incorrect , give the answr once the
 ![image](images/view2.PNG)
 
 Packages used :
-Beautiful Soup | Pandas | Requests | SQL Lite | Seaborn | MatplotLib
+Beautiful Soup | Pandas | Requests | LMXL | RANDOM | TIME
 
 [Back to Project List](http://emilevdheyde.github.io/)
 
