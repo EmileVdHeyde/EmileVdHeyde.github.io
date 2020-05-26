@@ -27,6 +27,6 @@
 
 ### Miscellaneous Projects
 
-[Covid-19 Visualisations](http://example.com/)
+[Covid-19 Visualisations](/Mis_CovidVisuals.md)
 
 ---
