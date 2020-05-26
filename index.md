@@ -4,7 +4,7 @@
 
 ### Python Coding Projects
 
-[Web Scraping Covid data from HTML to Database](/sample_page)
+[Web Scraping Covid data from HTML to Database](/Py_HTMLPull.md)
 
 
 ---
