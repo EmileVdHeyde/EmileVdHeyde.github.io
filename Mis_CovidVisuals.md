@@ -8,23 +8,19 @@ This project uses creates a game to guess a word based on 2 categories and alows
 
 ### 1. Tabulation Daily 
 
-![image](images/view1.PNG)
+![image](images/Covid_Table.PNG)
 
 ### 2. Global Map 
 
-![image](images/view1.PNG)
+![image](images/Covid_Map.PNG)
 
 ### 3. Country Comparison 
 
-![image](images/view1.PNG)
+![image](images/Covid_Compare1.PNG)
 
-### 3. Daily changes 
+### 4. Daily changes 
 
-![image](images/view1.PNG)
-
-### 4. Video of change
-
-![image](images/view2.PNG)
+![image](images/Covid_SA.PNG)
 
  Data Sourced from John Hopkins Github 
 
