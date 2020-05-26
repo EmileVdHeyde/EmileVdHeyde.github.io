@@ -4,7 +4,8 @@
 
 **Project description:** 
 
-This project uses creates a game to guess a word based on 2 categories and alows users to input letters to guess the word 
+This project uses a GitHub Repository with daily data on Covid-19. The Repository is copied and synced on my local drive.
+The data is imported and uses Power BI took restructure tables, use DAX to minipulate the data then final display the data. 
 
 ### 1. Tabulation Daily 
 
@@ -18,7 +19,7 @@ This project uses creates a game to guess a word based on 2 categories and alows
 
 ![image](images/Covid_Compare1.PNG)
 
-### 4. Daily changes 
+### 4. Daily changes For South Africa
 
 ![image](images/Covid_SA.PNG)
 
