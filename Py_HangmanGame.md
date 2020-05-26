@@ -20,7 +20,7 @@ Alow the user to select a category and randomly pic a word in this category
 
 Alow the user to input data and create a merchanism to asses the input using conditional loops
 
-### 3. Exctact the actual data 
+### 3. Extract the actual data 
 
 Run through the HTML per day, to extract the values and store in database 
 
