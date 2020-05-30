@@ -1,46 +1,55 @@
 
-## Classification of Early policy Cancelation based on Adviser Features 
+## Text Analysis for Moderation of posted comments using Deep Learning
 
 [Back to Project List](http://emilevdheyde.github.io/)
 
 **Project description:** 
 
-This project classification model , identifies policies that will default within 6 months of acceptence. 
-The scoring is done at policy stage so that management can act on a different commission sctructure for tht policy.
-The variables used are based on policy factor particularly around the adviser selling the policy.
+This project classification model , using a Neural Network algorithm to identify if a post should be accepted or rejected because it contains a high possiblity of abusive or discriminatory language. 
 
-Because this is an actual working problem , some details are not revealed for company privacy.
-The object of the below is to demonstrate the process and sucsess of the model.
+The model uses a rich sample of publicly avalible blog comments and classifies them using Tensor flow keras.
+Training has been done to create accuracy and recall to x% and x% recpectively.
+
+The model was then saved and deployed and is avalible to demo at the following link.
+
+<link> 
 
 [Click here to View .py or .ipynb files relating to this project](http://github.com/EmileVdHeyde/My-Python-Projects/tree/master/1.Covid%20Data%20Web%20Scraping)
 
-### 1. Data Exploration and hypothesis testing 
+### 1. Data Exploration 
 
-Based on business information on what behaviors are risky or have caused adviser fraud before. I set about creating a base table of the data and the preposed varibles in SQL.
-Using Pandas, summary tables and graphs i asessed various variables with univerite anysis as well as bivariate analysis on the target varible.
-Hypothesis testing was applied to see if relationships were statsically signicant. 
-A short list of varibles were then moved to the next phase.
+Using a large volume of public data , where comments have already been classified into Accept and reject.
+The sample size was xxxx with % of the reviews being rejected. Average word count per comment was x with it being relatively balanced between accepted and rejected posts. 
+
+The source data can be found from the package nlp, civil comments. 
 
 ### 2. Data Preparation 
 
-Preparing the data for modeling by creating dummys by hot codding , standardising data , balancing the data.
-Data is split into Training , Test and validation for assesment. 
-Data is converted to NPZ files for Tensor flow Neaural networks. 
+Preparing the data for modeling by performing classic text preperation. This inluded Removing special characters and removing common stop words such as (     ,   ,    etc). The paragraphs was then tranformed into numerical tokens and then into tensors in order for the Tensor flow keras algorism to learn and classify. For traning we split the data set into a training an validation set. 
 
 
 ### 3. Classification Models
 
-Models used were logistic regression , SVM , Decision Trees ,  K-neirest neighbour using Sk learn kit 
-A Neaural network model was also used generated using TensorFlow. 
+A Neaural network model was also used generated using TensorFlow. We attempted to use the following type of models using binary_crossentropy. 
+1. Classic sequential 
+2. BIDIRECTIONAL LSTM (Selected model)
+3. Bi directional GRU 
+
+We also wanted to use the very popular vaderSentiment  to compare our model to. 
 
 ### 4. Assesment of the accuracy of the model 
 
-The challeng of this model was to use techniquues that could handle the imbalnce in the data caused by rare events.
-it was this reason and because the effect of calling a false positive was most costly.
-That the Recall score was the most important measure to use. 
+The model was enhanced awith 
+Training ; accuracy of  x% and Recall of x% 
+Validation ; x% of accuracy and Recall of x% 
+
+In comparison with the vaderSentiment  the allignment was x% with recall x%
+
+### 5. Model and App Deployment 
+
+I then used Heroku to deploy a live model that does real time assesment of any input paragraph you may input. 
 
 
 Packages used :
-Numpy | Pandas | Sklearn | Scipy | Tensorflow | StatsModels | Keras | MatplotLib
-
+Numpy | Pandas | Sklearn | Tensorflow | Keras | MatplotLib |Pickle |Streamlit| Heroku
 [Back to Project List](http://emilevdheyde.github.io/)
