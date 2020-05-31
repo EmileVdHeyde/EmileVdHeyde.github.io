@@ -12,7 +12,7 @@ Training has been done to create accuracy and recall to x% and x% recpectively.
 
 The model was then saved and deployed and is avalible to demo at the following link.
 
-<link> 
+<Test The model> (link)
 
 [Click here to View .py or .ipynb files relating to this project](https://github.com/EmileVdHeyde/My-Python-Projects/tree/master/4.NLP%20Comments%20Moderator)
 
