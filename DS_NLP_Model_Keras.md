@@ -12,7 +12,7 @@ Training has been done to create accuracy and recall to x% and x% recpectively.
 
 The model was then saved and deployed and is avalible to demo at the following link.
 
-<Test The model> (https://commentmoderator.herokuapp.com/)
+https://commentmoderator.herokuapp.com/
 
 [Click here to View .py or .ipynb files relating to this project](https://github.com/EmileVdHeyde/My-Python-Projects/tree/master/4.NLP%20Comments%20Moderator)
 
@@ -52,4 +52,5 @@ I then used Heroku to deploy a live model that does real time assesment of any i
 
 Packages used :
 Numpy | Pandas | Sklearn | Tensorflow | Keras | MatplotLib |Pickle |Flask| Heroku
+
 [Back to Project List](http://emilevdheyde.github.io/)
