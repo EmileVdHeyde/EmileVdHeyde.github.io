@@ -27,7 +27,7 @@ Run through the HTML per day, to extract the values and store in database
 Use Seaborn to display the data 
 
 
-Packages used :
-Beautiful Soup | Pandas | Requests | SQL Lite | Seaborn | MatplotLib
+**Packages used :
+Beautiful Soup | Pandas | Requests | SQL Lite | Seaborn | MatplotLib **
 
 [Back to Project List](http://emilevdheyde.github.io/)
