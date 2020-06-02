@@ -57,7 +57,7 @@ A very basic HTML and CSS template was used to allow user interface.
 I then used Heroku to deploy a live model that does real time assesment of any input paragraph you may input. 
 You can try it out here : [Demo model](https://commentmoderator.herokuapp.com/)
 
-Packages used :
-Numpy | Pandas | Sklearn | Tensorflow | Keras | MatplotLib |Pickle |Flask| Heroku
+**Packages used :
+Numpy | Pandas | Sklearn | Tensorflow | Keras | MatplotLib |Pickle |Flask| Heroku **
 
 [Back to Project List](http://emilevdheyde.github.io/)
