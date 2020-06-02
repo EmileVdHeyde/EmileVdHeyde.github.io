@@ -134,6 +134,17 @@ def build_country_database(list_country):
 
 Allow entry of a country name into function to return information
 
+
+This code is a code improvement of the base code from 
+https://github.com/tirthajyoti/Web-Database-Analytics/blob/master/Countries-JSON-API.ipynb
+
+Improvements include ; 
+>
+>
+>
+>
+>
+
 Packages Used: 
 URLIB | JSON | PANDAS 
 
