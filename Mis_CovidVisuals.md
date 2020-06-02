@@ -25,8 +25,8 @@ The data is imported and uses Power BI took restructure tables, use DAX to minip
 
  Data Sourced from John Hopkins Github 
 
-Technology used :
-Power BI | GitHub
+**Technology used :
+Power BI | GitHub**
 
 [Back to Project List](http://emilevdheyde.github.io/)
 
