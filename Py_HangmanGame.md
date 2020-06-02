@@ -4,7 +4,7 @@
 
 **Project description:** 
 
-This project uses creates a game to guess a word based on 2 categories and alows users to input letters to guess the word 
+This project creates a game to guess a word based on 2 categories and alows users to input letters to guess the word.
 
 [Click here to View .py or .ipynb files relating to this project](https://github.com/EmileVdHeyde/My-Python-Projects/tree/master/2.%20Hangman%20Game)
 
@@ -31,6 +31,15 @@ Respond if user is correct or and respond if incorrect , give the answr once the
 ![image](images/view1.PNG)
 
 ![image](images/view2.PNG)
+
+
+This project was a code improvement of the basic code done by 
+
+Improvements included
+>
+>
+>
+>
 
 Packages used :
 Beautiful Soup | Pandas | Requests | LMXL | RANDOM | TIME
