@@ -46,7 +46,7 @@ A Neaural network model was also used generated using TensorFlow. We attempted t
 The model was accuracy of training was 90% , and validation accuracy was 62%
 Using the indipendent test sample an accuracy of  63% was obtained.
 
-Due to this lower fitting , it was decided to band the responses where <30% would be accepted , >70% would be rejected and between would be a neural category. 
+Due to this over fitting , it was decided to band the responses where <30% would be accepted , >70% would be rejected and between would be a neutral category. The recall improved slightly to 66% for rejects. 
 
 ### 5. Model and App Deployment 
 
