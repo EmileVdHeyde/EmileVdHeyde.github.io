@@ -33,9 +33,10 @@ Respond if user is correct or and respond if incorrect , give the answr once the
 ![image](images/view2.PNG)
 
 
-This project was a code improvement of the basic code done by 
+This project was a code improvement of the framework from 
+https://www.pythonforbeginners.com/code-snippets-source-code/game-hangman/
 
-Improvements included
+Improvements to the code included
 >
 >
 >
