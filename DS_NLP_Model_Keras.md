@@ -21,6 +21,7 @@ It is avalible to avalible to demo at the following link.
 
 Using a large volume of public data , where comments have already been classified into Accept and reject.
 The random sample size was 50 000 data points was used which we balanced the data to 50% accepted and 50% reject.
+The data had an average number of 51 words per data point(comment). This was approximaty equal between approved and rejected cases. 
 
 The source data can be found from the package nlp, civil comments. 
 
@@ -28,7 +29,7 @@ The source data can be found from the package nlp, civil comments.
 
 Preparing the data for modeling by performing classic text preperation. This included Removing special characters and removing common stop words such as ( the, his, and ..). 
 
-The paragraphs was then tranformed into numerical tokens and then into tensors in order for the Tensor flow keras algorism to learn and classify. 
+The paragraphs was then tranformed into numerical tokens and then into tensors in order for the Tensor flow keras algorism to learn and classify. a limit of the top 5000 words were used with a maximum of 120 words allowed, post trancation and post padding meaning that the begining of the text in the rare cases when the text limit was exceeded. 
 
 For traning we split the data set into a training an validation set in a ratio of 60:20:20. 
 
@@ -42,8 +43,8 @@ A Neaural network model was also used generated using TensorFlow. We attempted t
 
 ### 4. Assesment of the accuracy of the model 
 
-The model was accuracy of training was xx% , and validation accuracy was xx%
-Using the indipendent test sample an accuracy of  ... was obtained.
+The model was accuracy of training was 90% , and validation accuracy was 62%
+Using the indipendent test sample an accuracy of  63% was obtained.
 
 Due to this lower fitting , it was decided to band the responses where <30% would be accepted , >70% would be rejected and between would be a neural category. 
 
