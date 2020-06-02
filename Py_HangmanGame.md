@@ -37,9 +37,9 @@ This project was a code improvement of the framework from
 https://www.pythonforbeginners.com/code-snippets-source-code/game-hangman/
 
 Improvements to the code included
-> I included a new feature to have more than one category 
-> I Included a feature to display the attempts remaining even though you got it correct.
-> Added a feature that made the game not senstive to text case. 
+#I included a new feature to have more than one category 
+#I Included a feature to display the attempts remaining even though you got it correct.
+#Added a feature that made the game not senstive to text case. 
 
 Packages used :
 Beautiful Soup | Pandas | Requests | LMXL | RANDOM | TIME
