@@ -139,12 +139,12 @@ This code is a code improvement of the base code from
 https://github.com/tirthajyoti/Web-Database-Analytics/blob/master/Countries-JSON-API.ipynb
 
 Improvements included ; 
-> Fixing the original code to work with all countries and not just a selection
-> There was issues relating to special characters and multi word country names not loading
-> The json file contain some nones which caused indexing errors 
-> There was no mechanism to look up country names.
+-Fixing the original code to work with all countries and not just a selection
+-There was issues relating to special characters and multi word country names not loading
+-The json file contain some nones which caused indexing errors 
+-There was no mechanism to look up country names.
 
-Packages Used: 
-URLIB | JSON | PANDAS 
+**Packages Used: 
+URLIB | JSON | PANDAS **
 
 [Back to Project List](http://emilevdheyde.github.io/)
