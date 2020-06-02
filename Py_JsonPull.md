@@ -1,4 +1,4 @@
-## Web Scraping Data from a Json page to Datafame 
+## Web Scraping Data from a Json page to Dataframe 
 
 [Back to Project List](http://emilevdheyde.github.io/)
 
