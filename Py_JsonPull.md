@@ -149,7 +149,6 @@ Improvements included ;
 -There was no mechanism to look up country names.
 
 
-**Packages Used: 
-URLIB | JSON | PANDAS
+**Packages Used: URLIB | JSON | PANDAS**
 
 [Back to Project List](http://emilevdheyde.github.io/)
