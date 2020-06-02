@@ -39,7 +39,7 @@ it was this reason and because the effect of calling a false positive was most c
 That the Recall score was the most important measure to use. 
 
 
-Packages used :
-Numpy | Pandas | Sklearn | Scipy | Tensorflow | StatsModels | Keras | MatplotLib
+**Packages used :
+Numpy | Pandas | Sklearn | Scipy | Tensorflow | StatsModels | Keras | MatplotLib** 
 
 [Back to Project List](http://emilevdheyde.github.io/)
