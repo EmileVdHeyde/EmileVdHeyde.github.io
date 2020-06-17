@@ -25,6 +25,14 @@
 
 ---
 
+### Data Application Projects
+
+[WhatsApp Discussions Analysis App](/App_WhatsAppAnalysis.md)
+
+[GoodBad Classification EDA tool](/App_GoodBadEDAtool.md)
+
+---
+
 ### Miscellaneous Projects
 
 [Covid-19 Visualisations](/Mis_CovidVisuals.md)
