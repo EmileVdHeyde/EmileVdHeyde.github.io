@@ -1,13 +1,12 @@
 
-## WhatsApp Chat Analysis Application 
+## GoodBad Classification EDA tool
 
 [Back to Project List](http://emilevdheyde.github.io/)
 
 **Project description:** 
 
-Every day we chat with whatsapp with friends and family , but do we have a good idea of how often we message ,  if there are any common words we use and if there is certain behaviours you exibit compared to your friends you message with. 
-
-This application, is just for fun and for the curious. 
+When starting classification models we often want to investigate the relationship between our target varible and a host of variables.
+This model looks within the categories if each varaible and illistrates though graphing if there is a difference in the bad rate between cateorgoies within a specific varible. 
 
 It is avalible to avalible to demo at the following link.
 [Demo model](https://analysis-whatsapp.herokuapp.com/)
@@ -16,39 +15,43 @@ It is avalible to avalible to demo at the following link.
 
 ### 1. Product Vision Statement
 
-A method to simply upload whatsapp text files and discover interesting insights , deliver in interactive visualisations that is aimeed at understanding you and your friends chat language and habits on WhatsApp. 
-
-The focus is providing a application that is focused on being fun, interesting and usable to someone with basic data literacy. 
+The objective is to quickly investigate a data set and transform it in a awy that we can produce the graphs and toggele between different varibles. 
 
 ### 2. List of Features
 
-Drag and Drop txt file importing. 
-Alows for two person chat and Group Chat. 
-Alows to export charts to share with friends.
+Upload a csv of your data. 
 
-Specific views: 
-Time line view of frequency of messaging and average number of words per message.
-Word cloud and bar chart of Top 50 words
-Select a word and compare the usage accros friends
-Persona Classifications such as ( Night Owl, Short text Chatter , Initiator)
+Choose a target varible, and be able to toggle to chose a good bad range if the value is categorical.
+
+Chose a feauture varible as a selection to see in the graph against the target varible. 
+
+The feature variable will need some preprossing that we will make dynamic and aoumote in the application; 
+This includes alowing to bin the continous varibles in groupings.
+Some mechanism to group categorical varibles into groupings where there are two many categories within that variable. 
+
+A basic time filter to see if relationships are consistant over time , or to view the latest x months patterns. 
+
+The basic output will be 
+1. The Count of occurances , raw counts. 
+2. % Bad per category/ group within each Feature varible. 
+
 
 ### 3. Platform
 
 The Product is Phython driven using pandas as the main data minipulation tool.
-Altair is used as the main Graphing tool. 
+Seaborn is used as the main Graphing tool. 
 Streamlit is used to create the Application and the interactive widgets. 
-Heroku is the deployment server. 
+No deployment server. 
 
 ### 4. Dependencies, Assumptions , Constraints
 
-Users should know how to download the txt file for discussions. we do provide info on how to do it.
-Users may be apprehansive of uploading personal conversations online, we howver do not store the data. 
-Whatsapp provides a zip file that requires an additional unzipping tool , that most people have on PC , but mobile would require a seperate app. 
-
+This is not aimed at someone who does not have some background in data analysis or data science.
+This tool does not aim to be everything in EDA, but another tool in the process to asist. 
+There is a variety of data types and possible , we attempt to adress the most common ones. 
 
 [Demo model](https://analysis-whatsapp.herokuapp.com/)
 
 **Packages used :
-Streamlit | Heroku| Altair | WordCloud| Regex | Pandas |**
+Streamlit | Seaborn | WordCloud| Regex | Pandas |**
 
 [Back to Project List](http://emilevdheyde.github.io/)
