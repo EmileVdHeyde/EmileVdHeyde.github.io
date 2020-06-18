@@ -13,9 +13,13 @@ A bi directional convoluted Neural net algorism was used to model the accept and
 The model was then saved and a package was created for with flask and deployed on heroku.  
 
 It is avalible to avalible to demo at the following link.
+Flask Built : 
 [Demo model](https://commentmoderator.herokuapp.com/)
-
 [Click here to View .py or .ipynb files relating to this project](https://github.com/EmileVdHeyde/My-Python-Projects/tree/master/4.NLP%20Comments%20Moderator)
+
+Streamlit Built: 
+[Demo model](xxxxxx)
+[Click here to View .py or .ipynb files relating to this project](https://github.com/EmileVdHeyde/NLP_Comments_SL-)
 
 ### 1. Data Exploration 
 
@@ -54,8 +58,10 @@ A function was used to sumperise the model , along with the save model weights a
 
 A very basic HTML and CSS template was used to allow user interface. 
 
+I also did a version of the same model in Stremlit instead of Flask
+
 I then used Heroku to deploy a live model that does real time assesment of any input paragraph you may input. 
-You can try it out here : [Demo model](https://commentmoderator.herokuapp.com/)
+
 
 **Packages used :
 Numpy | Pandas | Sklearn | Tensorflow | Keras | MatplotLib |Pickle |Flask| Heroku **
