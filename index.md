@@ -29,6 +29,7 @@
 
 [WhatsApp Discussions Analysis App](/App_WhatsAppAnalysis.md)
 
+---
 [GoodBad Classification EDA tool](/App_GoodBadEDAtool.md)
 
 ---
