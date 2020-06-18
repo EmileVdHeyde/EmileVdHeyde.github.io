@@ -44,7 +44,7 @@ The basic output will be
 The Product is Phython driven using pandas as the main data minipulation tool.
 Seaborn is used as the main Graphing tool. 
 Streamlit is used to create the Application and the interactive widgets. 
-No deployment server. 
+Heroku used as a production server. 
 
 ### 4. Dependencies, Assumptions , Constraints
 
