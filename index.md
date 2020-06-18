@@ -39,4 +39,3 @@
 [Covid-19 Visualisations](/Mis_CovidVisuals.md)
 
 
-[end]
