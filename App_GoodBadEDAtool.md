@@ -5,10 +5,11 @@
 
 **Project description:** 
 
-When starting classification models we often want to investigate the relationship between our target varible and a host of variables.
-This model looks within the categories if each varaible and illistrates though graphing if there is a difference in the bad rate between cateorgoies within a specific varible. 
+When starting classification models we often want to investigate the relationship between our target variable and a host of exploratory variables that may become features in our model building. 
 
-It is avalible to avalible to demo at the following link.
+This application looks within the categories inside each candidate varaible and illistrates though graphing if there is a difference in the bad rate between cateorgoies within a specific varible. 
+
+It is avalible to demo at the following link.
 [Demo model](https://goodbadclassification-eda.herokuapp.com/)
 
 [Click here to View .py or .ipynb files relating to this project](https://github.com/EmileVdHeyde/GoodBadEDA)
