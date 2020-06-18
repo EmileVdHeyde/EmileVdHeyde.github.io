@@ -13,12 +13,15 @@ A bi directional convoluted Neural net algorism was used to model the accept and
 The model was then saved and a package was created for with flask and deployed on heroku.  
 
 It is avalible to avalible to demo at the following link.
+
 Flask Built : 
 [Demo model](https://commentmoderator.herokuapp.com/)
+
 [Click here to View .py or .ipynb files relating to this project](https://github.com/EmileVdHeyde/My-Python-Projects/tree/master/4.NLP%20Comments%20Moderator)
 
 Streamlit Built: 
-[Demo model](xxxxxx)
+[Demo model](https://commentsmoderator-2.herokuapp.com/)
+
 [Click here to View .py or .ipynb files relating to this project](https://github.com/EmileVdHeyde/NLP_Comments_SL-)
 
 ### 1. Data Exploration 
