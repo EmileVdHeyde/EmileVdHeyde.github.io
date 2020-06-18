@@ -7,7 +7,7 @@
 
 When starting classification models we often want to investigate the relationship between our target variable and a host of exploratory variables that may become features in our model building. 
 
-This application looks within the categories inside each candidate varaible and illistrates though graphing if there is a difference in the bad rate between cateorgoies within a specific varible. 
+This application looks within the categories inside each candidate varaible and illistrates through graphing if there is a difference in the bad rate between cateorgoies within a specific varible. 
 
 It is avalible to demo at the following link.
 [Demo model](https://goodbadclassification-eda.herokuapp.com/)
