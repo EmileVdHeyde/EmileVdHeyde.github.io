@@ -16,19 +16,21 @@ It is avalible to demo at the following link.
 
 ### 1. Product Vision Statement
 
-The objective is to quickly investigate a data set and transform it in a awy that we can produce the graphs and toggele between different varibles. 
+The objective is to quickly investigate a data set and transform it in a awy that we can produce the bad percentage graph per category and toggele between different varibles and ranges. 
+
+Simplicity of a tool , and demonstating quickly the varible that may be a big differentiator for your model. 
 
 ### 2. List of Features
 
-Upload a csv of your data. 
+Easy drag and drop tool to upload a csv of your data. 
 
-Choose a target varible, and be able to toggle to chose a good bad range if the value is categorical.
+Alow user to choose a target varible, and be able to toggle a value if the target in contiuous or choose a good bad range if the value is categorical.
 
-Chose a feauture varible as a selection to see in the graph against the target varible. 
+Choose a feauture varible as a selection to see in the graph against the target varible. 
 
-The feature variable will need some preprossing that we will make dynamic and aoumote in the application; 
-This includes alowing to bin the continous varibles in groupings.
-Some mechanism to group categorical varibles into groupings where there are two many categories within that variable. 
+The feature variable will need some preprossing that we will make dynamic and automate in the application; 
+This includes alowing to bin the continuous varibles in groupings.
+Also a feature to group categorical varibles into groupings where there are two many categories within that variable. 
 
 A basic time filter to see if relationships are consistant over time , or to view the latest x months patterns. 
 
