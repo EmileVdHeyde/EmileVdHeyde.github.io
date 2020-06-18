@@ -9,9 +9,9 @@ When starting classification models we often want to investigate the relationshi
 This model looks within the categories if each varaible and illistrates though graphing if there is a difference in the bad rate between cateorgoies within a specific varible. 
 
 It is avalible to avalible to demo at the following link.
-[Demo model](https://analysis-whatsapp.herokuapp.com/)
+[Demo model](https://goodbadclassification-eda.herokuapp.com/)
 
-[Click here to View .py or .ipynb files relating to this project](https://github.com/EmileVdHeyde/WhatsAppSL)
+[Click here to View .py or .ipynb files relating to this project](https://github.com/EmileVdHeyde/GoodBadEDA)
 
 ### 1. Product Vision Statement
 
@@ -49,7 +49,7 @@ This is not aimed at someone who does not have some background in data analysis 
 This tool does not aim to be everything in EDA, but another tool in the process to asist. 
 There is a variety of data types and possible , we attempt to adress the most common ones. 
 
-[Demo model](https://analysis-whatsapp.herokuapp.com/)
+[Demo model](https://goodbadclassification-eda.herokuapp.com/)
 
 **Packages used :
 Streamlit | Seaborn | WordCloud| Regex | Pandas |**
