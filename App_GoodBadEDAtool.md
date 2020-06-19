@@ -1,4 +1,4 @@
-## GoodBad Classification EDA tool
+## Good-Bad Classification EDA tool
 
 [Back to Project List](http://emilevdheyde.github.io/)
 
