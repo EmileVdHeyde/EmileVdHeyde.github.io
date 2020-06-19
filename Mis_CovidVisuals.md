@@ -2,10 +2,9 @@
 
 [Back to Project List](http://emilevdheyde.github.io/)
 
-**Project description:** 
+**Project Description:** 
 
-This project uses a GitHub Repository with daily data on Covid-19. The Repository is copied and synced on my local drive.
-The data is imported and uses Power BI took restructure tables, use DAX to minipulate the data then final display the data. 
+This project uses a GitHub Repository with daily data on Covid-19. The Repository is copied and synced on my local drive. The data is imported and uses Power BI to restructure tables. DAX is used to structure the data for analysis. And finally, the information is displayed in interactive graphs and animation graphs.
 
 ### 1. Tabulation Daily 
 
