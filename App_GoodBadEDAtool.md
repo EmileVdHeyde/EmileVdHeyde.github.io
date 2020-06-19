@@ -8,7 +8,7 @@ When starting classification models we often want to investigate the relationshi
 
 This application provides a simple mechanism to select an exploratory variable and illustrate through graphing if there is a difference in the bad rate between the categories within a specific variable. 
 
-It is available to demo at the following link.
+The Tool is available to demo at the following link.
 [Demo model](https://goodbadclassification-eda.herokuapp.com/)
 
 [Click here to View .py or .ipynb files relating to this project](https://github.com/EmileVdHeyde/GoodBadEDA)
