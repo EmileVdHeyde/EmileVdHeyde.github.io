@@ -1,18 +1,16 @@
-## Web Scraping Data from a Json page to Dataframe 
+## Web Scraping Data from a JSON page to Dataframe 
 
 [Back to Project List](http://emilevdheyde.github.io/)
 
-**Project description:** 
+**Project Description:** 
 
-This project uses an Free API and extract a selection of data points relating to the countries of the world.
-This is a excercise in getting the data into a dataframe sructure , wrangeling some data issues and over coming the sometimes multiple responses per targeted column as well as inforcing error control. 
+This project uses a Free API and extracts a selection of data points relating to the countries of the world. This is an exercise in getting the data into a data frame structure, wrangling some data issues and overcoming the sometimes multiple responses per targeted column as well as inforcing error control.
 
 [Click here to View .py or .ipynb files relating to this project](https://github.com/EmileVdHeyde/My-Python-Projects/tree/master/3.JSON%20API)
 
 ### 1. Build a function genrates a list of county names
 
-Pulling from the Json stored data , we extract the first element the country name and build a list. 
-This is important for the user to specify the countries they want , or to select all countries in the next steps. 
+Pulling from the JSON stored data, we extract the first element the country name and build a list. This is important for the user to specify the countries they want or to select all countries in the next steps.s. 
 
 ```python
 def list_of_countries(number_to_return=300):
@@ -140,13 +138,18 @@ This code is a code improvement of the base code from
 
 Improvements included ; 
 
+Allow entry of a country name into the function to return information
+This code is a code improvement of the base code from link
+
+Improvements included ;
+
 -Fixing the original code to work with all countries and not just a selection
 
--There was issues relating to special characters and multi word country names not loading
+-There was issues relating to particular characters and multi-word country names not loading
 
--The json file contain some nones which caused indexing errors 
+-The JSON file contains some nones which caused indexing errors
 
--There was no mechanism to look up country names.
+-There was no mechanism to lookup country names.
 
 
 **Packages Used: URLIB | JSON | PANDAS**
