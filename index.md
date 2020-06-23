@@ -18,7 +18,7 @@
 
 ### Data Science Projects
 
-[Classification of Early policy Cancelation based on Adviser Features](/DS_Classification_EarlyCancelations.md)
+[Classification Model to minimise commission debt of insurance policies](/DS_Classification_EarlyCancelations.md)
 
 ---
 [Text Analysis for Moderation of posted comments using Deep Learning](/DS_NLP_Model_Keras.md)
