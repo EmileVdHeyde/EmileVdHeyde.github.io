@@ -33,6 +33,9 @@
 [GoodBad Classification EDA tool](/App_GoodBadEDAtool.md)
 
 ---
+[Covid-19 South Africa Application](/App_CovidLocal.md)
+
+---
 
 ### Miscellaneous Projects
 
