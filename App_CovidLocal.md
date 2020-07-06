@@ -9,9 +9,9 @@ When starting classification models, we often want to investigate the relationsh
 This application provides a simple mechanism to select an exploratory variable and illustrate through graphing if there is a difference in the bad rate between the categories within a specific variable. 
 
 It is available to demo at the following link.
-[Demo model](https://goodbadclassification-eda.herokuapp.com/)
+[Demo model](https://covid19-southafrica.herokuapp.com/)
 
-[Click here to View .py or .ipynb files relating to this project](https://github.com/EmileVdHeyde/GoodBadEDA)
+[Click here to View .py or .ipynb files relating to this project](https://github.com/EmileVdHeyde/CovidAnalysis)
 
 ### 1. Product Vision Statement
 
@@ -48,9 +48,9 @@ This application is aimed at someone who has some background in data analysis or
 The application does not aim to be a complete EDA solution, but another tool in the process to assist with model building.
 The user should upload a CSV file with headers. 
 
-[Demo model](https://goodbadclassification-eda.herokuapp.com/)
+[Demo model](https://covid19-southafrica.herokuapp.com/)
 
 **Packages used :
-Streamlit | Seaborn | WordCloud| Regex | Pandas |**
+Streamlit | Altair | Pandas |**
 
 [Back to Project List](http://emilevdheyde.github.io/)
