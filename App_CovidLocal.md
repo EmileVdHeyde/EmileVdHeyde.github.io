@@ -13,7 +13,7 @@ It is available to demo at the following link.
 
 [Click here to View .py or .ipynb files relating to this project](https://github.com/EmileVdHeyde/CovidAnalysis)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+[Video]<iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ### 1. Product Vision Statement
 
