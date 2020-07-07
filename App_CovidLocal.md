@@ -13,6 +13,8 @@ It is available to demo at the following link.
 
 [Click here to View .py or .ipynb files relating to this project](https://github.com/EmileVdHeyde/CovidAnalysis)
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
 ### 1. Product Vision Statement
 
 The objective of this exploratory data analysis tool is to quickly investigate a data set and use the application to transform it in a way that we can produce the bad percentage graph per category and allow the users to toggle between different variables and variable ranges. 
