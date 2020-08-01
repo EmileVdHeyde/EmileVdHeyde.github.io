@@ -4,9 +4,9 @@
 
 **Project Description:** 
 
-When starting classification models, we often want to investigate the relationship between our target variable and a host of exploratory variables that may become features in our model. 
+Understanding the trends in Covid-19 cases is rarely as simple as viewing cumulitive cases and daily new cases. 
 
-This application provides a simple mechanism to select an exploratory variable and illustrate through graphing if there is a difference in the bad rate between the categories within a specific variable. 
+This application provides a easy tool to view trends in cases , deaths and new cases on a daily level by province.
 
 It is available to demo at the following link.
 [Demo model](https://covid19-southafrica.herokuapp.com/)
@@ -23,38 +23,36 @@ It is available to demo at the following link.
 
 ### 1. Product Vision Statement
 
-The objective of this exploratory data analysis tool is to quickly investigate a data set and use the application to transform it in a way that we can produce the bad percentage graph per category and allow the users to toggle between different variables and variable ranges. 
+The objective of this exploratory data tool is to provide insight to the user on covid trends in there province and nationally 
 
-The simplicity of the tool to handle different variables and variable types is the main objective of this application so that the user can quickly identify what variable is the big differentiator for your model. 
 
 ### 2. List of Features
 
-For input, the application has an easy drag and drop tool to upload a CSV file of the users' data. 
+For input, the user can set the the date range and the province they would like to see. 
 
-The application will allow the user to choose a target variable.
-When the target is continuous, the user will be able to toggle a specific value for the good/bad cut off. When the target is categorical, the user will be able to select the categories that fall within the bad grouping. 
+A default of the last 30 days was chosen  to alow better reading and quicker rendering. 
 
-Next, the application will allow the user to choose an exploratory variable which they would like to see in the output graphs. 
-
-The chosen exploratory variable may need some preprocessing depending on its type and number of categories within the exploratory variable. The application provides a customisable and straightforward way to do this. This includes allowing to bin the continuous variables into groupings. In the case when there are too many categories within a given categorical variable, the application allows grouping of categories into a smaller number of groups. 
-
-The additional feature to look at time range is provided with a time filter. This particularly useful when we want to see if the relationship we are trying to confirm is still consistent with the most recent time
-
-The  application output will be ; 
-The count of good and bad occurrences of each item within the exploratory variable. 
-The percentage bad per category/group within each exploratory variable. 
+The following Charts are provided: 
+     - Total Cases
+     - Total Deaths 
+     - Total Active Cases
+     - Cumulitive Cases 
+     
+Additionally also Tables are provided: 
+     - Total Cases 
+     -Last week vs This week changes
+     -Population Scales measures
+     
 
 ### 3. Platform
 
-The application is Python driven using pandas as the main data manipulation tool. Seaborn is used as the graphing tool. 
+The application is Python driven using pandas as the main data manipulation tool. Altair  is used as the graphing tool. 
 Streamlit is used to create the application and interactive widgets. 
 Heroku used as a production server. 
 
 ### 4. Dependencies, Assumptions, Constraints
 
-This application is aimed at someone who has some background in data analysis or data science sufficient to interpret the output.
-The application does not aim to be a complete EDA solution, but another tool in the process to assist with model building.
-The user should upload a CSV file with headers. 
+This application is  runs on external data source as referenced in the application. 
 
 [Demo model](https://covid19-southafrica.herokuapp.com/)
 
