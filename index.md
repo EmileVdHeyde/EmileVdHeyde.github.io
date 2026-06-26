@@ -44,7 +44,7 @@
 
 [Padel Clubs WC](/padel-checklist-western-cape.html)
 
-[Karaoke Spinner](/karaoke-spinner.jsx)
+[Karaoke Spinner](/karaoke-spinner.html)
 
 
 
