@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Karaoke Roulette</title>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&family=Playfair+Display:ital,wght@1,700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0d0d1a 0%, #1a0a2e 50%, #0d1a0d 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Nunito', sans-serif;
+    padding: 24px 16px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .star {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.4);
+    animation: twinkle 3s ease-in-out infinite alternate;
+  }
+
+  @keyframes twinkle { from { opacity: 0.2; } to { opacity: 1; } }
+
+  @keyframes shimmer {
+    0% { background-position: -200% center; }
+    100% { background-position: 200% center; }
+  }
+
+  @keyframes pulseGlow {
+    0%, 100% { box-shadow: 0 0 20px rgba(255,200,50,0.4), 0 0 60px rgba(255,100,0,0.2); }
+    50% { box-shadow: 0 0 35px rgba(255,200,50,0.7), 0 0 90px rgba(255,100,0,0.35); }
+  }
+
+  @keyframes popIn {
+    0% { transform: scale(0.5) translateY(20px); opacity: 0; }
+    70% { transform: scale(1.07) translateY(-4px); opacity: 1; }
+    100% { transform: scale(1) translateY(0); opacity: 1; }
+  }
+
+  .eyebrow {
+    font-size: 13px;
+    letter-spacing: 6px;
+    color: rgba(255,200,80,0.85);
+    text-transform: uppercase;
+    margin-bottom: 6px;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  h1 {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-weight: 700;
+    font-size: clamp(28px, 6vw, 46px);
+    background: linear-gradient(90deg, #FFD60A, #FF6B35, #FF2D55, #AF52DE, #FFD60A);
+    background-size: 300% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: shimmer 4s linear infinite;
+    margin-bottom: 28px;
+    text-align: center;
+  }
+
+  .wheel-wrap {
+    position: relative;
+    display: inline-block;
+  }
+
+  .pointer {
+    position: absolute;
+    top: -18px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    filter: drop-shadow(0 2px 6px rgba(0,0,0,0.6));
+  }
+
+  .glow-ring {
+    border-radius: 50%;
+    padding: 6px;
+    background: rgba(255,255,255,0.08);
+    transition: background 0.5s;
+  }
+
+  .glow-ring.spinning {
+    background: conic-gradient(from 0deg, #FF2D55, #FFD60A, #34C759, #007AFF, #AF52DE, #FF2D55);
+    animation: pulseGlow 0.8s ease-in-out infinite;
+  }
+
+  canvas {
+    display: block;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  canvas.spinning { cursor: not-allowed; }
+
+  #spin-btn {
+    margin-top: 28px;
+    padding: 14px 52px;
+    font-size: 17px;
+    font-weight: 900;
+    font-family: 'Nunito', sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(135deg, #FFD60A 0%, #FF6B35 50%, #FF2D55 100%);
+    color: #1a0a0a;
+    cursor: pointer;
+    transition: transform 0.15s, filter 0.15s;
+    box-shadow: 0 4px 30px rgba(255,150,30,0.45);
+  }
+
+  #spin-btn:hover:not(:disabled) { transform: scale(1.06); filter: brightness(1.1); }
+  #spin-btn:active:not(:disabled) { transform: scale(0.96); }
+  #spin-btn:disabled { opacity: 0.6; cursor: not-allowed; background: rgba(255,255,255,0.1); color: rgba(255,255,255,0.4); box-shadow: none; }
+
+  #result {
+    display: none;
+    margin-top: 28px;
+    padding: 22px 32px;
+    background: rgba(255,255,255,0.07);
+    backdrop-filter: blur(14px);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 20px;
+    text-align: center;
+    animation: popIn 0.45s cubic-bezier(0.34,1.56,0.64,1) both;
+    max-width: 340px;
+    width: 100%;
+  }
+
+  #result.visible { display: block; }
+
+  .result-eyebrow {
+    font-size: 11px;
+    letter-spacing: 4px;
+    color: #FFD60A;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    font-weight: 700;
+  }
+
+  #result-title {
+    font-size: clamp(20px, 5vw, 28px);
+    font-weight: 900;
+    color: #fff;
+    margin-bottom: 4px;
+    line-height: 1.2;
+  }
+
+  #result-artist {
+    font-size: 15px;
+    color: rgba(255,255,255,0.6);
+    font-weight: 600;
+  }
+
+  #spin-again {
+    margin-top: 16px;
+    background: none;
+    border: 1px solid rgba(255,255,255,0.25);
+    color: rgba(255,255,255,0.6);
+    border-radius: 50px;
+    padding: 7px 22px;
+    font-size: 12px;
+    font-family: 'Nunito', sans-serif;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: all 0.2s;
+  }
+
+  #spin-again:hover { background: rgba(255,255,255,0.1); color: #fff; }
+
+  .hint {
+    margin-top: 20px;
+    font-size: 12px;
+    color: rgba(255,255,255,0.25);
+    letter-spacing: 1px;
+  }
+</style>
+</head>
+<body>
+
+<p class="eyebrow">🎶 Tonight's Stage</p>
+<h1>Karaoke Roulette</h1>
+
+<div class="wheel-wrap">
+  <div class="pointer">
+    <svg width="32" height="36" viewBox="0 0 32 36">
+      <polygon points="16,36 0,0 32,0" fill="#FFD60A" stroke="#222" stroke-width="1.5"/>
+      <polygon points="16,28 6,4 26,4" fill="#FFB300"/>
+    </svg>
+  </div>
+  <div class="glow-ring" id="glowRing">
+    <canvas id="wheel" width="340" height="340"></canvas>
+  </div>
+</div>
+
+<button id="spin-btn">🎰 Spin!</button>
+
+<div id="result">
+  <div class="result-eyebrow">🎤 You're singing…</div>
+  <div id="result-title"></div>
+  <div id="result-artist"></div>
+  <button id="spin-again">↺ Spin Again</button>
+</div>
+
+<div class="hint" id="hint"></div>
+
+<script>
+const songs = [
+  { title: "Bohemian Rhapsody", artist: "Queen" },
+  { title: "Don't Stop Believin'", artist: "Journey" },
+  { title: "Livin' on a Prayer", artist: "Bon Jovi" },
+  { title: "Sweet Caroline", artist: "Neil Diamond" },
+  { title: "Mr. Brightside", artist: "The Killers" },
+  { title: "Wonderwall", artist: "Oasis" },
+  { title: "Africa", artist: "Toto" },
+  { title: "Dancing Queen", artist: "ABBA" },
+  { title: "Total Eclipse of the Heart", artist: "Bonnie Tyler" },
+  { title: "I Will Survive", artist: "Gloria Gaynor" },
+  { title: "Shallow", artist: "Lady Gaga" },
+  { title: "Uptown Girl", artist: "Billy Joel" },
+  { title: "Summer Nights", artist: "Grease" },
+  { title: "Under Pressure", artist: "Queen & Bowie" },
+  { title: "Toxic", artist: "Britney Spears" },
+  { title: "Killing Me Softly", artist: "Fugees" },
+];
+
+const COLORS = [
+  "#FF2D55","#FF6B35","#FFD60A","#34C759",
+  "#00C7BE","#007AFF","#AF52DE","#FF375F",
+  "#FF9F0A","#30D158","#32ADE6","#BF5AF2",
+  "#FF6961","#FFB347","#77DD77","#AEC6CF",
+];
+
+const N = songs.length;
+const FULL = 2 * Math.PI;
+const SEG = FULL / N;
+
+const canvas = document.getElementById('wheel');
+const ctx = canvas.getContext('2d');
+const glowRing = document.getElementById('glowRing');
+const spinBtn = document.getElementById('spin-btn');
+const resultBox = document.getElementById('result');
+const resultTitle = document.getElementById('result-title');
+const resultArtist = document.getElementById('result-artist');
+const spinAgain = document.getElementById('spin-again');
+const hint = document.getElementById('hint');
+
+hint.textContent = N + ' classic karaoke bangers';
+
+let rotation = 0;
+let velocity = 0;
+let spinning = false;
+let animId = null;
+
+function drawWheel(angle) {
+  const W = canvas.width, H = canvas.height;
+  const cx = W / 2, cy = H / 2;
+  const radius = Math.min(cx, cy) - 8;
+
+  ctx.clearRect(0, 0, W, H);
+
+  for (let i = 0; i < N; i++) {
+    const start = angle + i * SEG;
+    const end = start + SEG;
+    const mid = start + SEG / 2;
+
+    ctx.beginPath();
+    ctx.moveTo(cx, cy);
+    ctx.arc(cx, cy, radius, start, end);
+    ctx.closePath();
+    ctx.fillStyle = COLORS[i % COLORS.length];
+    ctx.fill();
+
+    ctx.beginPath();
+    ctx.moveTo(cx, cy);
+    ctx.arc(cx, cy, radius, start, end);
+    ctx.closePath();
+    ctx.strokeStyle = "rgba(0,0,0,0.35)";
+    ctx.lineWidth = 1.5;
+    ctx.stroke();
+
+    ctx.save();
+    ctx.translate(cx, cy);
+    ctx.rotate(mid);
+    ctx.textAlign = "right";
+    ctx.fillStyle = "#fff";
+    ctx.shadowColor = "rgba(0,0,0,0.6)";
+    ctx.shadowBlur = 4;
+    ctx.font = "bold 11px 'Nunito', sans-serif";
+    ctx.fillText(songs[i].title, radius - 14, 4);
+    ctx.font = "9.5px 'Nunito', sans-serif";
+    ctx.fillStyle = "rgba(255,255,255,0.75)";
+    ctx.fillText(songs[i].artist, radius - 14, 16);
+    ctx.restore();
+  }
+
+  // Center hub
+  const hub = ctx.createRadialGradient(cx - 6, cy - 6, 2, cx, cy, 34);
+  hub.addColorStop(0, "#fff");
+  hub.addColorStop(1, "#ccc");
+  ctx.beginPath();
+  ctx.arc(cx, cy, 34, 0, FULL);
+  ctx.fillStyle = hub;
+  ctx.fill();
+  ctx.strokeStyle = "#888";
+  ctx.lineWidth = 2;
+  ctx.stroke();
+
+  ctx.font = "bold 18px serif";
+  ctx.textAlign = "center";
+  ctx.textBaseline = "middle";
+  ctx.fillStyle = "#222";
+  ctx.shadowColor = "transparent";
+  ctx.fillText("🎤", cx, cy);
+}
+
+function doSpin() {
+  if (spinning) return;
+  spinning = true;
+  resultBox.classList.remove('visible');
+  spinBtn.disabled = true;
+  spinBtn.textContent = 'Spinning…';
+  glowRing.classList.add('spinning');
+  canvas.classList.add('spinning');
+
+  velocity = 0.25 + Math.random() * 0.35;
+  const friction = 0.988;
+
+  function animate() {
+    rotation += velocity;
+    velocity *= friction;
+    drawWheel(rotation);
+    if (velocity > 0.002) {
+      animId = requestAnimationFrame(animate);
+    } else {
+      const normalized = (((-rotation - Math.PI / 2) % FULL) + FULL) % FULL;
+      const index = Math.floor(normalized / SEG) % N;
+      const winner = songs[index];
+
+      spinning = false;
+      spinBtn.disabled = false;
+      spinBtn.textContent = '🎰 Spin!';
+      glowRing.classList.remove('spinning');
+      canvas.classList.remove('spinning');
+
+      resultTitle.textContent = winner.title;
+      resultArtist.textContent = 'by ' + winner.artist;
+      resultBox.classList.remove('visible');
+      void resultBox.offsetWidth; // force reflow for animation replay
+      resultBox.classList.add('visible');
+    }
+  }
+
+  animId = requestAnimationFrame(animate);
+}
+
+// Generate stars
+for (let i = 0; i < 24; i++) {
+  const star = document.createElement('div');
+  star.className = 'star';
+  const size = i % 3 === 0 ? 3 : 2;
+  star.style.width = size + 'px';
+  star.style.height = size + 'px';
+  star.style.top = (Math.sin(i * 137.5) * 50 + 50) + '%';
+  star.style.left = (Math.cos(i * 97.3) * 50 + 50) + '%';
+  star.style.animationDuration = (2 + (i % 4)) + 's';
+  star.style.animationDelay = (i * 0.3) + 's';
+  document.body.appendChild(star);
+}
+
+spinBtn.addEventListener('click', doSpin);
+canvas.addEventListener('click', doSpin);
+spinAgain.addEventListener('click', doSpin);
+
+drawWheel(rotation);
+</script>
+</body>
+</html>
