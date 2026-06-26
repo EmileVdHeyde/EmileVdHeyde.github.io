@@ -42,3 +42,12 @@
 [Covid-19 Visualisations](/Mis_CovidVisuals.md)
 
 
+[Padel Clubs WC](/padel-checklist-western-cape.html)
+
+[Karaoke Spinner](/karaoke-spinner.jsx)
+
+
+
+
+
+
